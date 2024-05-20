@@ -1,18 +1,33 @@
 {
   "name": "date-locale",
-  "version": "0.0.0",
+  "version": "0.0.9",
   "description": "",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "homepage": "https://github.com/faridkarami/date-locale",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faridkarami/date-locale.git"
+  },
+  "bugs": {
+    "url": "https://github.com/faridkarami/date-locale/issues"
+  },
+  "files": [
+    "dist/**/*",
+    "*.md"
+  ],
   "keywords": [],
-  "author": "",
+  "author": "Farid Karami",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.12.12",
     "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=20",
+    "npm": ">=10.0.0"
   }
 }
