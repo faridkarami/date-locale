@@ -29,9 +29,6 @@
   "author": "Farid Karami",
   "license": "MIT",
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^28.0.6",
-    "@rollup/plugin-node-resolve": "^16.0.2",
-    "@rollup/plugin-typescript": "^12.1.4",
     "@types/jest": "^30.0.0",
     "jest": "^30.2.0",
     "rimraf": "^6.0.1",
