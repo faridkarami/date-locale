@@ -1,4 +1,4 @@
-# 📅 date-locale  
+# 📅 date-locale 8
 
 > 🌍 Lightweight date conversion utilities between **Gregorian ↔ Persian (Jalali)** calendars.  
 > ⚡ Zero-dependency, TypeScript-ready, and tree-shakeable.
@@ -7,12 +7,12 @@
 
 ## ✨ Features
 
-- 🔄 Convert **Gregorian → Persian (Jalali)** dates  
-- 🔄 Convert **Persian (Jalali) → Gregorian** dates  
-- ⚡ Written in **TypeScript** with type definitions  
-- 📦 Provides **ESM** and **CJS** builds  
-- ✅ Zero external dependencies  
-- 🚀 Ready for CI/CD and npm publishing  
+- 🔄 Convert **Gregorian → Persian (Jalali)** dates
+- 🔄 Convert **Persian (Jalali) → Gregorian** dates
+- ⚡ Written in **TypeScript** with type definitions
+- 📦 Provides **ESM** and **CJS** builds
+- ✅ Zero external dependencies
+- 🚀 Ready for CI/CD and npm publishing
 
 ---
 
@@ -35,7 +35,7 @@ yarn add date-locale
 ### Import
 
 ```ts
-import { gregorianToPersianDate, persianToGregorianDate } from "date-locale";
+import { gregorianToPersianDate, persianToGregorianDate } from 'date-locale';
 ```
 
 ---
@@ -43,8 +43,8 @@ import { gregorianToPersianDate, persianToGregorianDate } from "date-locale";
 ### 📅 Convert Gregorian → Persian
 
 ```ts
-const persianDate = gregorianToPersianDate("2025-10-03");
-console.log(persianDate); 
+const persianDate = gregorianToPersianDate('2025-10-03');
+console.log(persianDate);
 // 👉 "1404-07-11"
 ```
 
@@ -53,8 +53,8 @@ console.log(persianDate);
 ### 📅 Convert Persian → Gregorian
 
 ```ts
-const gregorianDate = persianToGregorianDate("1404-07-11");
-console.log(gregorianDate); 
+const gregorianDate = persianToGregorianDate('1404-07-11');
+console.log(gregorianDate);
 // 👉 "2025-10-03"
 ```
 
@@ -104,17 +104,17 @@ EOF
 
 ## 🤖 CI/CD
 
-- ✅ **CI (GitHub Actions)** runs on every PR & push  
-- 🚀 **Release workflow** publishes to npm when a new Git tag (`vX.X.X`) is pushed  
+- ✅ **CI (GitHub Actions)** runs on every PR & push
+- 🚀 **Release workflow** publishes to npm when a new Git tag (`vX.X.X`) is pushed
 
 ---
 
 ## 🤝 Contributing
 
-1. Fork the repo 🍴  
-2. Create a new branch 🌱  
-3. Make your changes ✨  
-4. Submit a Pull Request 🚀  
+1. Fork the repo 🍴
+2. Create a new branch 🌱
+3. Make your changes ✨
+4. Submit a Pull Request 🚀
 
 ---
 
@@ -126,4 +126,4 @@ EOF
 
 ## 💡 Inspiration
 
-This package was built to make **date conversion between Gregorian and Persian calendars simple, fast, and reliable**. Perfect for developers building apps for Iran & international projects. 🌍  
+This package was built to make **date conversion between Gregorian and Persian calendars simple, fast, and reliable**. Perfect for developers building apps for Iran & international projects. 🌍
