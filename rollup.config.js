@@ -1,7 +1,5 @@
-import resolve from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
-import typescript from '@rollup/plugin-typescript';
 import dts from 'rollup-plugin-dts';
+import esbuild from 'rollup-plugin-esbuild';
 
 export default [
   {
@@ -19,15 +17,11 @@ export default [
         sourcemap: true,
       },
     ],
-    plugins: [
-      resolve(),
-      commonjs(),
-      typescript({ tsconfig: './tsconfig.json' }),
-    ],
+    plugins: [esbuild({ target: 'es2017' })],
   },
   // Build Types
   {
-    input: 'dist/types/index.d.ts',
+    input: 'src/index.ts',
     output: [{ file: 'dist/index.d.ts', format: 'es' }],
     plugins: [dts()],
   },

@@ -10,9 +10,7 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-    "build:ts": "tsc --emitDeclarationOnly",
-    "build:rollup": "rollup -c",
-    "build": "npm run clean && npm run build:ts && npm run build:rollup",
+    "build": "npm run clean && rollup -c",
     "prepublishOnly": "npm run build",
     "test": "jest",
     "test:watch": "jest --watch"
@@ -39,6 +37,7 @@
     "rimraf": "^6.0.1",
     "rollup": "^4.52.4",
     "rollup-plugin-dts": "^6.2.3",
+    "rollup-plugin-esbuild": "^6.2.1",
     "ts-jest": "^29.4.5",
     "typescript": "^5.9.3"
   },
