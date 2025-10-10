@@ -1,4 +1,4 @@
-# 📅 date-locale 8
+# 📅 date-locale
 
 > 🌍 Lightweight date conversion utilities between **Gregorian ↔ Persian (Jalali)** calendars.  
 > ⚡ Zero-dependency, TypeScript-ready, and tree-shakeable.
