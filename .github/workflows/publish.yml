@@ -2,8 +2,8 @@ name: Publish to NPM
 
 on:
   push:
-    branches:
-      - main
+    # branches:
+    #   - main
     tags:
       - 'v*' # v0.0.14
 
@@ -21,11 +21,11 @@ jobs:
           node-version: 20
           registry-url: 'https://registry.npmjs.org/'
         
-      - name: Install depedencies
-        run: yarn install --frozen-lockfile
+      - name: Install dependencies
+        run: yarn install #--frozen-lockfile
 
       - name: Run tests
-        run: yarn tests
+        run: yarn test
 
       - name: Build package
         run: yarn build
