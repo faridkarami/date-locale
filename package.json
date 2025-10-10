@@ -1,6 +1,6 @@
 {
   "name": "date-locale",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Lightweight date conversion utilities between Gregorian and Persian (Jalali) dates.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
