@@ -1,3 +1,3 @@
 export * from './utils';
-export * from './gregorianToPersianDate';
-export * from './persianToGregorianDate';
+export * from './gregorian-to-persian-date';
+export * from './persian-to-gregorian-date';
