@@ -1,0 +1,48 @@
+{
+  "name": "date-locale",
+  "version": "0.0.10",
+  "description": "Lightweight date conversion utilities between Gregorian and Persian (Jalali) dates.",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build:ts": "tsc --emitDeclarationOnly",
+    "build:rollup": "rollup -c",
+    "build": "npm run clean && npm run build:ts && npm run build:rollup",
+    "prepublishOnly": "npm run build",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/faridkarami/date-locale.git"
+  },
+  "keywords": [
+    "date",
+    "calendar",
+    "gregorian",
+    "persian",
+    "jalali"
+  ],
+  "author": "Farid Karami",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.2",
+    "@rollup/plugin-typescript": "^12.1.4",
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.52.4",
+    "rollup-plugin-dts": "^6.2.3",
+    "ts-jest": "^29.4.5",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "tslib": "^2.8.1"
+  }
+}
